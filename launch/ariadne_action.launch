@@ -1,0 +1,26 @@
+<launch>
+
+    <arg name="topic_action" default="/get_splines_action"/> 
+    <arg name="topic_camera" default="/usb_cam/image_raw" />
+    <arg name="num_superpixels" default="30"/> 
+    <arg name="type_model" default="STANDARD"/> 
+
+    <arg name="camera_matrix" default="525.08783, 0.0, 340.829224, 0.0, 524.478088, 255.226487, 0.0, 0.0, 1.0" />
+    <arg name="distort_vec" default="-0.011761, -0.069188, -0.000052,  0.000897, 0.154654"/>
+    <arg name="camera_height" default="480" />
+    <arg name="camera_width" default="640" />
+
+    <node pkg="ariadne_plus" name="ariadne_action" type="run_ariadne_action.py" output="screen">
+        <param name="topic_action" value="$(arg topic_action)" />
+        <param name="topic_camera" value="$(arg topic_camera)" />
+        <param name="num_superpixels" value="$(arg num_superpixels)" />
+        <param name="type_model" value="$(arg type_model)" />
+
+        <param name="camera_matrix" value="$(arg camera_matrix)" />
+        <param name="distort_vec" value="$(arg distort_vec)"/>
+        <param name="camera_height" value="$(arg camera_height)" />
+        <param name="camera_width" value="$(arg camera_width)" />
+
+    </node>
+
+</launch>

@@ -1,0 +1,5 @@
+---
+sensor_msgs/Image mask_image
+sensor_msgs/Image image
+ariadne_plus/spline_tck[] tck
+---

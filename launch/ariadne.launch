@@ -1,0 +1,15 @@
+<launch>
+
+    <arg name="topic_service" default="/get_splines"/> 
+    <arg name="topic_camera" default="/usb_cam/image_raw" />
+    <arg name="num_superpixels" default="30"/> 
+    <arg name="type_model" default="STANDARD"/> 
+
+    <node pkg="ariadne_plus" name="ariadne_service" type="run_ariadne_service.py" output="screen">
+    <param name="topic_service" value="$(arg topic_service)" />
+    <param name="topic_camera" value="$(arg topic_camera)" />
+    <param name="num_superpixels" value="$(arg num_superpixels)" />
+    <param name="type_model" value="$(arg type_model)" />
+    </node>
+
+</launch>

@@ -1,0 +1,11 @@
+<launch>
+
+    <arg name="topic_camera" default="/usb_cam/image_raw" />
+    <arg name="img_path" default="test_images/simple_0.jpg"/>
+
+    <node pkg="ariadne_plus" name="ariadne_plus" type="fake_topic_camera.py" output="screen">
+    <param name="topic_camera" value="$(arg topic_camera)" />
+    <param name="img_path" value="$(arg img_path)" />
+    </node>
+
+</launch>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+  <name>ariadne_plus</name>
+  <version>0.1.0</version>
+  <description>Contains ariadne_plus</description>
+
+  <maintainer email="alessio.caporali2@unibo.it">Alessio Caporali</maintainer>
+
+  <license>TODO</license>
+
+  <author email="alessio.caporali2@unibo.it">Alessio Caporali</author> 
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>std_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>message_runtime</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  
+  <run_depend>std_msgs</run_depend>
+  <run_depend>message_generation</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+
+</package>
