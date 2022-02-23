@@ -29,7 +29,7 @@ python-igraph 0.8.3
 
 use conda for creating a virtual environment and name it ```ariadneplus```.
 
-Download the [trained models](https://mega.nz/file/YI90UADT#amRnVdUE4YZcXgO9oBBh9xPRsTA0eP3Py4rSHeU3JS4) and place them inside the ```checkpoints``` folder.
+Download the [trained models](https://drive.google.com/file/d/1rwyuUeltodsZjm53q6_46a8T-dRh1pnw/view?usp=sharing) and place them inside the ```checkpoints``` folder.
 
 
 # Execution
@@ -66,8 +66,13 @@ rosservice call /get_splines "{}"
 
 
 
-
-
+---
+### Acknowledgements/Fundings
+This work was supported by the European Commission’s Horizon 2020 Framework
+Programme with the project REMODEL - Robotic technologies for the manipulation of complex deformable linear objects - under grant agreement No 870133.
+  
+  
+DeepLabV3+ implementation based on [https://github.com/VainF/DeepLabV3Plus-Pytorch](https://github.com/VainF/DeepLabV3Plus-Pytorch)
 
 
 
