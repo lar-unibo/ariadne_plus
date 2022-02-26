@@ -5,6 +5,8 @@
 <div align="center">
 <p> Ariadne+: Deep Learning-based Augmented Framework for the Instance Segmentation of Wires </p>
 </div>
+  
+ :page_with_curl:  [IEEE Xplore](https://ieeexplore.ieee.org/document/9721686)  :page_with_curl:	
 
 
 # Abstract
@@ -73,6 +75,23 @@ Programme with the project REMODEL - Robotic technologies for the manipulation o
   
   
 DeepLabV3+ implementation based on [https://github.com/VainF/DeepLabV3Plus-Pytorch](https://github.com/VainF/DeepLabV3Plus-Pytorch)
+
+---
+### Citation
+If you use Ariade+ or this code base in your work, please cite
+  
+```
+@ARTICLE{9721686,
+  author={Caporali, Alessio and Zanella, Riccardo and De Gregorio, Daniele and Palli, Gianluca},
+  journal={IEEE Transactions on Industrial Informatics}, 
+  title={Ariadne+: Deep Learning-based Augmented Framework for the Instance Segmentation of Wires}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TII.2022.3154477}}
+```
+
 
 
 
