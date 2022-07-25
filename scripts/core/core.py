@@ -739,7 +739,7 @@ class AriadnePath(object):
         return paths_completed
 
     ###########################################################################################
-    def pathFromEndpoint(self, v0, condition_angle_enabled=True):
+    def pathFromEndpoint(self, v0):
 
         path_vertices = []
         path_vertices.append(v0)
@@ -765,21 +765,7 @@ class AriadnePath(object):
                 #print("length nn filtered is one!")
                 single_nn, = nn_f
                 if (self.graph.getIntersectionFromLabel(single_nn) == 0): # no intersection node
-
-                    # *******************************
-                    if condition_angle_enabled:
-                        path_tmp = [path_vertices[-2], path_vertices[-1], single_nn]
-                        angle = self.pathAngle(path_tmp)
-
-                        if angle > 1.5709:
-                            path_vertices.append(single_nn)
-                        #print(path_vertices)
-                        else:
-                            return path_vertices
-                
-                    else:
-                        path_vertices.append(single_nn)
-
+                    path_vertices.append(single_nn)
                 else:
                     return path_vertices #end condition for path completion limit
                   
