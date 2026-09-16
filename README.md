@@ -31,7 +31,7 @@ python-igraph 0.8.3
 
 use conda for creating a virtual environment and name it ```ariadneplus```.
 
-Download the [trained models](https://mega.nz/file/0YcwhbjD#w1BlGw7qPIqbyF8krR7m61JZjhQc1u4i36zWgzW_qNA) and place them inside the ```checkpoints``` folder.
+Download the [trained models](https://mega.nz/file/dVlGGThK#IuJnohWbh0WkjMiDcmPhvfgpFon-4PU3xvolr-ItQHk) and place them inside the ```checkpoints``` folder.
 
 
 # Execution
